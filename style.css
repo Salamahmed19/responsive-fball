@@ -1,0 +1,237 @@
+/* main body style */
+body{
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+/* heading styles */
+h1{
+    color: white;
+    font-size: 64px;
+    line-height: 80px;
+}
+h2{
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 60px;
+    margin-bottom: 0;
+}
+h4{
+    text-align: center;
+    background-color: tomato;
+    border-radius: 20px;
+    padding: 5px;
+    margin: 15px 140px;
+}
+.comtainer{
+    text-align: center;
+}
+/* header and navigation styles */
+.header{
+    background: #b275be;
+    padding: 40px 120px;
+}
+.nav-head{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navigation a:hover{
+    background-color: rgb(77, 20, 20);
+    color: black;
+}
+.navigation a{
+    color: white;
+    text-decoration: none;
+    padding-right: 36px;
+}
+/* animation/transmition section style */
+@keyframes sliding {
+    from{
+        background-color: yellow;
+        left: 0;
+    }
+    to{
+        background-color: red;
+        left: 95.3%;
+    }
+}
+.animation{
+    width: auto;
+    height: 60px;
+    background-color: violet;
+    margin: 40px;
+    border-radius: 30px;
+}
+.ball{
+    position: relative;
+    height: 60px;
+    width: 60px;
+    background-color: yellow;
+    border-radius: 60px;
+    animation: sliding 5s ease-in-out 0.5s infinite alternate ;
+    animation-play-state: running;
+}
+/* banner styles */
+.button .fa-sign-in-alt{
+    padding-left: 20px;
+}
+.banner{
+    display:flex;
+    align-items: center;
+}
+.banner-image{
+    margin: 30px;
+    background-color: rgb(187, 216, 213);  
+    border-radius: 0 90px 0 0;
+}
+.banner-image img:hover{
+    transform: translate(-200px)
+}
+.banner-image img{
+    width: 100%;
+}
+/* player styles */
+.players{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 27px;
+    grid-column-gap: 30px;
+    margin: 70px 210px 0 180px;
+}
+.player{
+    width: 300px;
+    height: 474px;
+    padding: 15px;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+}
+.player .player-image img{
+    width: 300px;
+    height: 256px;
+    margin: 0;
+    padding: 0;
+}
+.player-info{
+    width: 300px;
+    height: 154px;
+    margin: 16px 0px;
+}
+.player-name{
+    color: #18191F;
+    font-weight: 700px;
+    font-size: 28px;
+    line-height: 40px;
+}
+.player-details{
+    color: #6C6C6C;
+    font-size: 16px;
+    line-height: 26px;
+}
+/* match summary styles */
+.Match-summary{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 100px 0;
+}
+.match-highlight{
+    width: 469px;
+    padding-right: 66px;
+}
+.match-highlight p{
+    padding-right: 65px;
+}
+/* all button styles */
+.button{
+    background-color: #d825df;
+    width: 110px;
+    height: 25px;
+    padding: 10px 24px;
+    border-radius: 40px;
+}
+.button:hover{
+    background-color: violet;
+}
+.button span{
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+} 
+.button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -10px;
+    transition: 0.5s;
+}
+.button:hover span{
+    padding-right: 25px;
+} 
+.button:hover span:after {
+    opacity: 2;
+    right: 0;
+}
+.button a{
+    color: white;
+    text-decoration: none;
+}
+.fa-arrow-right{
+    color: white;
+}
+.match-thumbail img{
+    width: 567px;
+    height: 427px;
+}
+/* videos section style */
+.highlight-videos{
+    display: flex;   
+    justify-content: space-around;
+    margin: 60px;
+}
+.local-video{
+    width: 560px;
+    height: 315px;
+}
+.local-video video{
+    width: 100%;
+}
+/* footer styles */
+.footer{
+    height: 213px;
+    text-align: center;
+}
+.footer img{
+    width: 483.87px;
+    height: 110px;
+}
+.social-icons{
+    margin: 0px 14px;
+}
+/* media query/mobile device only */
+@media only screen and (max-width: 688px) {
+    body{
+        width: 100%;
+        margin: 0;
+        font-family: 'Poppins', sans-serif;
+    }
+    .nav-head{
+        display: none;
+    }
+    .banner{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .players, .Match-summary, .highlight-videos{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer {
+        height: 213px;
+        text-align: center;
+        padding: 30px;
+    }
+  }
+  
